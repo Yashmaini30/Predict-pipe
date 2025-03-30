@@ -18,14 +18,14 @@ list_of_files=[
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/entity/config_entity.py",
-    f"src/{project_name}/constants/__init__.py"
-    "config/config.yaml"
-    "params.yaml"
-    "main.py"
-    "Dockerfile"
-    "setup.py"
-    "research/trials.ipynb"
-    "temaplates/index.html"
+    f"src/{project_name}/constants/__init__.py",
+    "config/config.yaml",
+    "params.yaml",
+    "main.py",
+    "Dockerfile",
+    "setup.py",
+    "research/trials.ipynb",
+    "temaplates/index.html",
 ]
 
 for filepath in list_of_files:
