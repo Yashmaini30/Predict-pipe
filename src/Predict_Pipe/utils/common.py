@@ -1,6 +1,6 @@
 import os
 import yaml
-from Predict_Pipe.logging import logger
+from ..logging import logger
 import json
 import joblib
 from ensure import ensure_annotations
