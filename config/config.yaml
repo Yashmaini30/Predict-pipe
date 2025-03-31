@@ -5,3 +5,9 @@ data_ingestion:
   source_URL: https://raw.githubusercontent.com/krishnaik06/datasets/main/winequality-data.zip
   local_data_file: artifacts/data_ingestion/winequality-red.zip
   unzip_dir: artifacts/data_ingestion
+
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts\data_ingestion\winequality-red.zip
+  STATUS_FILE: artifacts/data_validation/status.txt
+  
