@@ -1,7 +1,9 @@
 from pathlib import Path
 
-import os
+ROOT_DIR = Path(__file__).resolve().parents[3]  # Adjusted to go 3 levels up
 
-CONFIG_FILE_PATH = os.path.abspath(os.path.join(os.getcwd(), "..", "config", "config.yaml"))
-PARAMS_FILE_PATH = Path("params.yaml")
-SCHEMA_FILE_PATH = Path("schema.yaml")
+# Define paths relative to ROOT_DIR
+CONFIG_FILE_PATH = ROOT_DIR / "config" / "config.yaml"
+PARAMS_FILE_PATH = ROOT_DIR / "params.yaml"
+SCHEMA_FILE_PATH = ROOT_DIR / "schema.yaml"
+
