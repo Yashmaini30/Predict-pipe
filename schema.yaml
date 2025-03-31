@@ -1,0 +1,5 @@
+dataset:
+  columns:
+    feature1: int
+    feature2: float
+    label: str
