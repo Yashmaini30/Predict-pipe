@@ -10,6 +10,7 @@ if src_path not in sys.path:
 from src.Predict_Pipe.logging import logger
 from src.Predict_Pipe.pipeline.data_ingestion import DataIngestionTrainingPipeline
 from src.Predict_Pipe.pipeline.data_validation import DataValidationTrainingPipeline
+from src.Predict_Pipe.pipeline.data_transformation import DataTransformationTrainingPipeline
 
 logger.info("Logging has started")
 
@@ -33,4 +34,12 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-
+STAGE_NAME = "Data Transformation stage"
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    obj = DataTransformationTrainingPipeline()
+    obj.initiate_data_transformation()
+    logger.info(f">>>>>>>{STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception(e)
+    raise e
