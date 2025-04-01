@@ -121,3 +121,9 @@ Transfer-Encoding: chunked
 Connection: close
 
 
+[2025-03-31 20:54:36,383: INFO: common]: yaml file: C:\Academics\AI and Ml\MLOPs\E2E-DataScience-Deployment\config\config.yaml loaded sucessfully
+[2025-03-31 20:54:36,385: INFO: common]: yaml file: C:\Academics\AI and Ml\MLOPs\E2E-DataScience-Deployment\params.yaml loaded sucessfully
+[2025-03-31 20:54:36,389: INFO: common]: yaml file: C:\Academics\AI and Ml\MLOPs\E2E-DataScience-Deployment\schema.yaml loaded sucessfully
+[2025-03-31 20:54:36,390: INFO: common]: created directory at: artifacts
+[2025-03-31 20:54:36,391: INFO: common]: created directory at: artifacts/data_ingestion
+[2025-03-31 20:54:36,391: INFO: 2523628334]: File already exists
