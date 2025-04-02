@@ -12,6 +12,7 @@ from src.Predict_Pipe.pipeline.data_ingestion import DataIngestionTrainingPipeli
 from src.Predict_Pipe.pipeline.data_validation import DataValidationTrainingPipeline
 from src.Predict_Pipe.pipeline.data_transformation import DataTransformationTrainingPipeline
 from src.Predict_Pipe.pipeline.model_trainer import ModelTrainerTrainingPipeline
+from src.Predict_Pipe.pipeline.model_evaluation import ModelEvaluationTrainingPipeline
 
 logger.info("Logging has started")
 
@@ -51,6 +52,17 @@ try:
     logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
     obj = ModelTrainerTrainingPipeline()
     obj.initiate_model_training()
+    logger.info(f">>>>>>>{STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
+STAGE_NAME = "Model Evaluation stage"
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    obj = ModelEvaluationTrainingPipeline()
+    obj.initiate_model_evaluation()
     logger.info(f">>>>>>>{STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
     logger.exception(e)
