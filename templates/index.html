@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">HomePage</a>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <div class="form-container">
+            <h3 class="text-center">Wine Quality Prediction</h3>
+            <form action="/predict" method="post">
+                <div class="mb-3">
+                    <label class="form-label">Fixed Acidity</label>
+                    <input type="number" step="any" class="form-control" name="Fixed Acidity" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Volatile Acidity</label>
+                    <input type="number" step="any" class="form-control" name="Volatile Acidity" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Citric Acid</label>
+                    <input type="number" step="any" class="form-control" name="Citric Acid" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Residual Sugar</label>
+                    <input type="number" step="any" class="form-control" name="Residual Sugar" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Chlorides</label>
+                    <input type="number" step="any" class="form-control" name="Chlorides" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Free Sulfur Dioxide</label>
+                    <input type="number" step="any" class="form-control" name="Free Sulfur Dioxide" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Total Sulfur Dioxide</label>
+                    <input type="number" step="any" class="form-control" name="Total Sulfur Dioxide" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Density</label>
+                    <input type="number" step="any" class="form-control" name="Density" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">pH</label>
+                    <input type="number" step="any" class="form-control" name="pH" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Sulphates</label>
+                    <input type="number" step="any" class="form-control" name="Sulphates" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Alcohol</label>
+                    <input type="number" step="any" class="form-control" name="Alcohol" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
