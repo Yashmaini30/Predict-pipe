@@ -2,3 +2,4 @@ venev/
 __pycache__/
 logs/
 artifacts/
+.env
